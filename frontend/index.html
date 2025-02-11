@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THẾ GIỚI SÁCH</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Liên kết CSS -->
-</head>
-<body>
+    <link rel="stylesheet" href="./css//style.css" />
+    <!-- Liên kết CSS -->
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Thế Giới Sách" />
+    </div>
     <!-- Bước 1: Nhập số điện thoại -->
     <div id="step1">
-        <h1>THẾ GIỚI SÁCH xin chào</h1>
-        <h2>Đăng nhập/ Đăng ký</h2>
-        <div class="form-group">
-            <label for="phoneNumber">Số điện thoại*</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Nhập số điện thoại của bạn" required>
-        </div>
-        <button class="btn" onclick="goToStep2()">Tiếp tục</button>
+      <h1>THẾ GIỚI SÁCH xin chào</h1>
+      <h2>Đăng nhập/ Đăng ký</h2>
+      <div class="form-group">
+        <label for="phoneNumber"></label>
+        <input
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Số điện thoại*"
+          required
+        />
+      </div>
+      <button class="btn btn-success" onclick="goToStep2()">Tiếp tục</button>
     </div>
 
     <!-- Bước 2: Đăng ký tài khoản -->
     <div id="step2" class="hidden">
-        <h1>Đăng ký tài khoản THẾ GIỚI SÁCH</h1>
-        <h2>Đăng ký cho số điện thoại</h2>
-        <h3 id="display-phone"></h3>
-        <div class="form-group">
-            <label for="name">Họ & tên*</label>
-            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Mật khẩu*</label>
-            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm-password">Xác nhận mật khẩu*</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
-        </div>
-        <button class="btn" onclick="register()">Đăng ký ngay</button>
+      <h1>Đăng ký tài khoản THẾ GIỚI SÁCH</h1>
+      <h2>Đăng ký cho số điện thoại</h2>
+      <h3 id="display-phone"></h3>
+      <div class="form-group">
+        <label for="name">Họ & tên*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nhập họ và tên của bạn"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Nhập email của bạn"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password"></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Mật khẩu*"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Xác nhận mật khẩu*</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Nhập lại mật khẩu*"
+          required
+        />
+      </div>
+      <button class="btn" onclick="register()">Đăng ký ngay</button>
     </div>
 
     <!-- Liên kết đến tệp JavaScript -->
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>
